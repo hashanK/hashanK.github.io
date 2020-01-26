@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/hover.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/aos.css">
     </head>
 
     <body>
@@ -40,7 +41,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 main-text">
+                        <div class="col-sm-6 main-text" data-aos="fade-right">
                             <h1>I'm a UI/UX Designer</h1>
                             <blockquote class="blockquote">
                                 <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -48,7 +49,7 @@
                             </blockquote>
                             <button class="btn btn-primary">Read More</button>
                         </div>
-                        <div class="col-sm-6 d-none d-sm-block">
+                        <div class="col-sm-6 d-none d-sm-block" data-aos="fade-left">
                             <img src="images/boy-bg.png" class="man-bg">
                         </div>
                     </div>
@@ -126,7 +127,7 @@
                             </ul>
                         </div>
 
-                        <div class="col-6 break">
+                        <div class="col-6">
                             <div class="card">
                                 <div class="card-body">
                                     <form>
@@ -161,8 +162,10 @@
     <script src="js/fullpage.min.js"></script>
     <script src="js/fullpage.extensions.min.js"></script>
     <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/aos.js"></script>
 
     <script>
+
         $(document).ready(function() 
         {
 	    $('#fullpage').fullpage({
@@ -182,6 +185,11 @@
         //methods
         $.fn.fullpage.setAllowScrolling(false);
         });
+
+         AOS.init({
+            duration: 1000
+         });
+
     </script>
 
 </html>

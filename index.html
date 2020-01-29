@@ -37,7 +37,7 @@
                     <li class="nav-item">
                       <a class="nav-link" data-menuanchor="Contacts" href="#Contacts">Contacts</a>
                     </li>
-                </ul> 
+                </ul>
 
                 <div class="container">
                     <div class="row">
@@ -50,7 +50,32 @@
                             <button class="btn btn-primary">Read More</button>
                         </div>
                         <div class="col-sm-6 d-none d-sm-block" data-aos="fade-left">
-                            <img src="images/boy-bg.png" class="man-bg">
+                            <img src="images/boy-bg.png" class="man-bg" style="float: right;">
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-sm-12">
+                            <ul class="list-group" style="align-items: center;" data-aos="fade-up"> 
+                                <!-- data-aos="fade-up" -->
+                                <li class="list-group-item social-icons" style="border-top: 1px solid #ccc;">
+                                    <a href="https://www.facebook.com/hashan.kannangara/" target="_blank">
+                                        <img src="images/facebook.png" class="hvr-grow-shadow">
+                                    </a>
+                                    <a href="https://www.instagram.com/hashan_kannangara/" target="_blank">
+                                        <img src="images/instagram.png" class="hvr-grow-shadow">
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/hashan-kannangara-8113b0162/" target="_blank">
+                                        <img src="images/linkedin.png" class="hvr-grow-shadow">
+                                    </a>
+                                    <a href="https://twitter.com/hashan_mk" target="_blank">
+                                        <img src="images/twitter.png" class="hvr-grow-shadow">
+                                    </a>
+                                    <a href="https://github.com/hashanK" target="_blank">
+                                       <img src="images/github.png" class="hvr-grow-shadow">
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -107,23 +132,6 @@
                                     <img src="images/email.png" class="hvr-grow">
                                     <p>hashank95@gmail.com</p>
                                 </li>
-                                <li class="list-group-item social-icons" style="border-top: 1px solid #ccc;">
-                                    <a href="https://www.facebook.com/hashan.kannangara/" target="_blank">
-                                        <img src="images/facebook.png" class="hvr-grow-shadow"> 
-                                    </a>
-                                    <a href="https://www.instagram.com/hashan_kannangara/" target="_blank">
-                                        <img src="images/instagram.png" class="hvr-grow-shadow">
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/hashan-kannangara-8113b0162/" target="_blank">
-                                        <img src="images/linkedin.png" class="hvr-grow-shadow">
-                                    </a>
-                                    <a href="https://twitter.com/hashan_mk" target="_blank">
-                                        <img src="images/twitter.png" class="hvr-grow-shadow"> 
-                                    </a>
-                                    <a href="https://github.com/hashanK" target="_blank">
-                                       <img src="images/github.png" class="hvr-grow-shadow">
-                                    </a>
-                                </li>
                             </ul>
                         </div>
 
@@ -147,7 +155,7 @@
                                     </form>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
 
                     </div>
                 </div>
@@ -166,7 +174,7 @@
 
     <script>
 
-        $(document).ready(function() 
+        $(document).ready(function()
         {
 	    $('#fullpage').fullpage({
             autoScrolling:true,
@@ -174,16 +182,26 @@
             navigation: true,
             navigationPosition: 'right',
             css3: true,
-            parallax: true,
             navigationTooltips: ['Home', 'Skills', 'Projects', 'About'],
             sectionsColor: ['#fff','#fff', '#fff', '#fff', '#fff'],
             licenseKey: 'YOUR_KEY_HERE',
             anchors:['Home', 'Skills', 'Projects', 'Contacts'],
-            keyboardScrolling: true
+            keyboardScrolling: true,
+
+            afterLoad: function(origin, destination, direction){
+                var loadedSection = this;
+
+                //using index
+                if(origin.index == 2){
+                    AOS.init({
+            duration: 1000
+         });
+                }
+            }
 	    });
 
-        //methods
         $.fn.fullpage.setAllowScrolling(false);
+        //methods
         });
 
          AOS.init({

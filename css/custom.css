@@ -61,8 +61,14 @@
     border-bottom: 1px solid #ccc;
 } */
 
-.social-icons img{
+/* .social-icons img{
     margin-right: 30px;
+} */
+
+.social-icons svg{
+    margin-right: 30px;
+    width: 64px;
+    height: 64px;
 }
 
 .list-group-item {

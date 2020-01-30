@@ -81,42 +81,37 @@
                 </div>
             </div>
 
-            <div class="section bg-img-2 fixed-bottom">
+            <div class="section bg-img-2 fixed-bottom">  
                 <div class="container">
                     <div class="row">
-                    <div class="col-9">
-                        <div class="card">
-                            <div class="card-body">
-                            <h5>Photoshop</h5>
-                            <div class="progress mb">
-                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h5>Illustrator</h5>
-                            <div class="progress mb">
-                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h5>Adobe XD</h5>
-                            <div class="progress mb">
-                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h5>HTML 5</h5>
-                            <div class="progress mb">
-                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h5>CSS 3</h5>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            </div>
+                        <div class="col-md-3">
+                            <div id="circle-1" class="skill-progress">
+                                <p class="text-center">Photoshop/Illustrator</p>
+                                <strong><i>%</i></strong>
+                            </div> 
                         </div>
-                    </div>
-
-                    <div class="col-3">
-
-                    </div>
+                        <div class="col-md-3">
+                            <div id="circle-2" class="skill-progress">
+                                <p class="text-center">Adobe XD</p>
+                                <strong><i>%</i></strong>
+                            </div> 
+                        </div>
+                        <div class="col-md-3">
+                            <div id="circle-3" class="skill-progress">
+                                <p class="text-center">HTML 5</p>
+                                <strong><i>%</i></strong>
+                            </div> 
+                        </div>
+                        <div class="col-md-3">
+                            <div id="circle-4" class="skill-progress">
+                                <p class="text-center">CSS 3</p>
+                                <strong><i>%</i></strong> 
+                            </div> 
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="section bg-img-3"></div>
             <div class="section bg-img-4">
                 <div class="container">
@@ -171,43 +166,7 @@
     <script src="js/fullpage.extensions.min.js"></script>
     <script src="js/scrolloverflow.min.js"></script>
     <script src="js/aos.js"></script>
-
-    <script>
-
-        $(document).ready(function()
-        {
-	    $('#fullpage').fullpage({
-            autoScrolling:true,
-            scrollHorizontally: true,
-            navigation: true,
-            navigationPosition: 'right',
-            css3: true,
-            navigationTooltips: ['Home', 'Skills', 'Projects', 'About'],
-            sectionsColor: ['#fff','#fff', '#fff', '#fff', '#fff'],
-            licenseKey: 'YOUR_KEY_HERE',
-            anchors:['Home', 'Skills', 'Projects', 'Contacts'],
-            keyboardScrolling: true,
-
-            afterLoad: function(origin, destination, direction){
-                var loadedSection = this;
-
-                //using index
-                if(origin.index == 2){
-                    AOS.init({
-            duration: 1000
-         });
-                }
-            }
-	    });
-
-        $.fn.fullpage.setAllowScrolling(false);
-        //methods
-        });
-
-         AOS.init({
-            duration: 1000
-         });
-
-    </script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/script.js"></script>
 
 </html>

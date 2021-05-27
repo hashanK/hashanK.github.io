@@ -1,172 +1,655 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="hashan madushanka kannangara, portfolio website">
-        <meta name="generator" content="Jekyll v3.8.6">
-        <title>Hashan | Portfolio</title>
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/fullpage.min.css">
-        <link rel="stylesheet" href="css/custom.css">
-        <link rel="stylesheet" href="css/hover.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/aos.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-    <body>
+    <!--------- Google font linking ------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
-        <div id="fullpage">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-            <div class="section bg-img">
-                <!-- style="background: linear-gradient(0deg, rgba(214,212,212,0.6225840678068102) 0%, rgba(255,255,255,1) 100%); -->
+    <!--------- FontAwesome CDN linking ------->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-                <ul class="nav justify-content-center fixed-top">
-                    <li class="nav-item">
-                      <a class="nav-link active" data-menuanchor="Home" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" data-menuanchor="Skills" href="#Skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" data-menuanchor="Projects" href="#Projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" data-menuanchor="Contacts" href="#Contacts">Contacts</a>
-                    </li>
-                </ul>
+    <!--------- Bootstrap CDN linking ------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 main-text" data-aos="fade-right">
-                            <h1>I'm a UI/UX Designer</h1>
-                            <blockquote class="blockquote">
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer class="blockquote-footer">Hashan Madushanka Kannangara</footer>
-                            </blockquote>
-                            <button class="btn btn-primary">Read More</button>
-                        </div>
-                        <div class="col-sm-6 d-none d-sm-block" data-aos="fade-left">
-                            <img src="images/boy-bg.png" class="man-bg" style="float: right;">
-                        </div>
+    <!--------- styles.css linking ------->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!--------- Preload markup starts ------->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+
+    <!--------- Navigations starts ------->
+    <main class="main">
+        <header class="header">
+            <div class="wrap d-flex">
+                <h1 class="logo">
+                    <a href=""><img src="images/logo.png"></a>
+                </h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a class="smooth-scroll" href="#home">Home</a></li>
+                        <li><a class="smooth-scroll" href="#about">About</a></li>
+                        <li><a class="smooth-scroll" href="#skills">Skills</a></li>
+                        <li><a class="smooth-scroll" href="#portfolio">portfolio</a></li>
+                        <li><a class="smooth-scroll" href="#services">Services</a></li>
+                        <li><a class="smooth-scroll" href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a href="javascript:void(0)" class="sidemenu-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="sidemenu">
+                <a href="javascript:void(0)" class="close"></a>
+                <nav>
+                    <ul>
+                        <li><a class="smooth-scroll" href="#home">Home</a></li>
+                        <li><a class="smooth-scroll" href="#about">About</a></li>
+                        <li><a class="smooth-scroll" href="#skills">Skills</a></li>
+                        <li><a class="smooth-scroll" href="#portfolio">portfolio</a></li>
+                        <li><a class="smooth-scroll" href="#services">Services</a></li>
+                        <li><a class="smooth-scroll" href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <footer>
+                    <div class="social">
+                        <a href=""><img src="images/facebook.png" alt="facebook"></a>
+                        <a href="https://twitter.com/hashan_mk"><img src="images/twitter.png" alt="twitter"></a>
+                        <a href=""><img src="images/instagram.png" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/in/hashan-kannangara-8113b0162/"><img src="images/linkedin.png" alt="linkedin"></a>
+                        <a href=""><img src="images/whatsapp.png" alt="whatsapp"></a>
                     </div>
+                    <p>2020-2021 creation of Hashan</p>
+                </footer>
+            </div>
 
-                    <div class="row" style="margin-top: 20px;">
-                        <div class="col-sm-12">
-                            <ul class="list-group" style="align-items: center;" data-aos="fade-up"> 
-                                <!-- data-aos="fade-up" -->
-                                <li class="list-group-item social-icons" style="border-top: 1px solid #ccc;">
-                                    <a href="https://www.facebook.com/hashan.kannangara/" target="_blank">
-                                        <img src="images/facebook.png" class="hvr-grow-shadow">
-                                    </a>
-                                    <a href="https://www.instagram.com/hashan_kannangara/" target="_blank">
-                                        <img src="images/instagram.png" class="hvr-grow-shadow">
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/hashan-kannangara-8113b0162/" target="_blank">
-                                        <img src="images/linkedin.png" class="hvr-grow-shadow">
-                                    </a>
-                                    <a href="https://twitter.com/hashan_mk" target="_blank">
-                                        <img src="images/twitter.png" class="hvr-grow-shadow">
-                                    </a>
-                                    <a href="https://github.com/hashanK" target="_blank">
-                                       <img src="images/github.png" class="hvr-grow-shadow">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+        </header>
+    </main>
+
+    <!--------- Home markup starts--------->
+
+    <br><br><br><br>
+
+    <section class="home container text-white" id="home">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="hero-text">
+                    <span class="title">Hello i'm</span><br>
+                    <span class="name">Hashan.</span><br>
+                    <!-- <span style="font-size: 15px;">Madushanka Kannangara</span><br> -->
+                    <span class="designation">Mobile Application Developer</span><br>
+                    <span class="email"><i class="fa fa-circle-o"></i> Hashan Madushanka Kannangara.</span><br>
+                    <span class="email"><i class="fa fa-envelope"></i> hashankannangara@gmail.com</span><br>
+                    <span class="phone"><i class="fa fa-phone"></i> +94 716783018</span>
+
+                    <div class="social-icons d-flex">
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-linkedin"></i></li>
+                        <li><i class="fa fa-instagram"></i></li>
                     </div>
                 </div>
             </div>
 
-            <div class="section bg-img-2 fixed-bottom">  
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div id="circle-1" class="skill-progress">
-                                <p class="text-center">Photoshop/Illustrator</p>
-                                <strong><i>%</i></strong>
-                            </div> 
-                        </div>
-                        <div class="col-md-3">
-                            <div id="circle-2" class="skill-progress">
-                                <p class="text-center">Adobe XD</p>
-                                <strong><i>%</i></strong>
-                            </div> 
-                        </div>
-                        <div class="col-md-3">
-                            <div id="circle-3" class="skill-progress">
-                                <p class="text-center">HTML 5</p>
-                                <strong><i>%</i></strong>
-                            </div> 
-                        </div>
-                        <div class="col-md-3">
-                            <div id="circle-4" class="skill-progress">
-                                <p class="text-center">CSS 3</p>
-                                <strong><i>%</i></strong> 
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section bg-img-3"></div>
-            <div class="section bg-img-4">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-6">
-                            <ul class="list-group">
-                                <li class="list-group-item contact-icons">
-                                    <img src="images/phone.png" class="hvr-grow">
-                                    <p>071 6783018</p>
-                                </li>
-                                <li class="list-group-item contact-icons">
-                                    <img src="images/email.png" class="hvr-grow">
-                                    <p>hashank95@gmail.com</p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="Email">Name</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="Email">Email address</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="Subject">Subject</label>
-                                            <textarea class="form-control" placeholder="Type here.." rows="3"></textarea>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Send</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-
+            <div class="col-md-6">
+                <div class="hero-img">
+                    <div class="img-border">
+                        <img src="images/me.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
 
         </div>
+    </section>
 
-    </body>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/fullpage.min.js"></script>
-    <script src="js/fullpage.extensions.min.js"></script>
-    <script src="js/scrolloverflow.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/circle-progress.min.js"></script>
-    <script src="js/script.js"></script>
+    <!--------- About markup starts--------->
 
+    <br><br><br><br><br>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/Work in progress.gif" alt="" style="border-radius: 20px;">
+                </div>
+                <div class="col-md-5 text-white gap">
+                    <br><br<br><br>
+                    <h2>About me</h2>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aspernatur maiores 
+                        enim necessitatibus perspiciatis quas labore culpa nam inventore unde esse ducimus laudantium natus,
+                        illo in at quam eligendi. Fugiat. enim necessitatibus perspiciatis quas labore culpa nam inventore 
+                        unde esse ducimus laudantium natus, illo in at quam eligendi. Fugiat.
+                    </p>
+                    <br>
+
+                    <div class="tag">
+                        <ul>
+                            <li><span>Flutter</span></li>
+                            <li><span>iOS</span></li>
+                            <li><span>Swift</span></li>
+                            <li><span>PHP</span></li>
+                            <li><span>Dart</span></li>
+                            <li><span>UI/UX</span></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="download-button">
+                        <a href="" class="btn btn-danger">Download CV</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------- Services markup starts--------->
+    
+    <br><br><br><br><br>
+
+    <section class="mh-service text-white" id="services">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h3>What I do</h3>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="mh-service-item">
+                        <i class="fa fa-code purple-color"></i>
+                        <h3>iOS Development</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, cupiditate, 
+                            illum eum voluptates possimus inventore quos quasi dicta modi porro distinctio 
+                            illo commodi qui accusantium facere nulla, impedit tempore nostrum.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="mh-service-item">
+                        <i class="fa fa-code iron-color"></i>
+                        <h3>Web Development</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, cupiditate, 
+                            illum eum voluptates possimus inventore quos quasi dicta modi porro distinctio 
+                            illo commodi qui accusantium facere nulla, impedit tempore nostrum.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="mh-service-item">
+                        <i class="fa fa-code sky-color"></i>
+                        <h3>Flutter Development</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, cupiditate, 
+                            illum eum voluptates possimus inventore quos quasi dicta modi porro distinctio 
+                            illo commodi qui accusantium facere nulla, impedit tempore nostrum.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="mh-service-item">
+                        <i class="fa fa-code purple-color"></i>
+                        <h3>UI Design</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, cupiditate, 
+                            illum eum voluptates possimus inventore quos quasi dicta modi porro distinctio 
+                            illo commodi qui accusantium facere nulla, impedit tempore nostrum.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="mh-service-item">
+                        <i class="fa fa-code iron-color"></i>
+                        <h3>Business Analysis</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, cupiditate, 
+                            illum eum voluptates possimus inventore quos quasi dicta modi porro distinctio 
+                            illo commodi qui accusantium facere nulla, impedit tempore nostrum.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="mh-service-item">
+                        <i class="fa fa-code sky-color"></i>
+                        <h3>Project Testing</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, cupiditate, 
+                            illum eum voluptates possimus inventore quos quasi dicta modi porro distinctio 
+                            illo commodi qui accusantium facere nulla, impedit tempore nostrum.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--------- Skills & Chart markup starts--------->
+
+    <br><br><br><br>
+
+    <section class="mh-skills" id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="mh-skills-inner">
+                        <div class="mh-professional-skill">
+                            <h3> Technical Skills</h3>
+                            <div class="each-skills">
+
+                                <div class="candidates">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="name">Swift</div>
+                                            <div class="percentage-num">86%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentage" style="width: 86%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="candidates">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="name">Dart</div>
+                                            <div class="percentage-num">86%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentage" style="width: 86%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="candidates">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="name">PHP</div>
+                                            <div class="percentage-num">46%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentage" style="width: 46%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="candidates">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="name">HTML/CSS</div>
+                                            <div class="percentage-num">76%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentage" style="width: 76%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="mh-professional-skills">
+                        <h3>Professional Skills</h3>
+                        <ul class="mh-professional-progress">
+                            <li>
+                                <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                <div class="pr-skill-name">Communication</div>
+                            </li>
+                            <li>
+                                <div class="mh-progress mh-progress-circle" data-progress="55"></div>
+                                <div class="pr-skill-name">Team work</div>
+                            </li>
+                            <li>
+                                <div class="mh-progress mh-progress-circle" data-progress="55"></div>
+                                <div class="pr-skill-name">Project Management</div>
+                            </li>
+                            <li>
+                                <div class="mh-progress mh-progress-circle" data-progress="77"></div>
+                                <div class="pr-skill-name">Creativity</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--------- Education Timeline--------->
+
+    <br><br><br><br>
+
+    <section class="mh-experience" id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-smd-12 col-md-6">
+                    <div class="mh-education">
+                        <h3>Education</h3>
+                        <div class="mh-education-details">
+
+                            <div class="mh-education-item">
+                                <h4>Advanced Level from <a href="https://dssenanayakecollege.lk/">D.S Senanayake Colleage</a></h4>
+                                <div class="mh-eduyear">2012-2014</div>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur ut dolore at labore perferendis 
+                                    ex blanditiis ducimus laborum assumenda modi. Esse nulla cumque ipsum sunt autem corrupti iusto
+                                    illum facilis.
+                                </p>
+                            </div>
+
+                            <div class="mh-education-item">
+                                <h4>Diploma in Software Engineering from <a href="http://esoft.lk/">Esoft Metro Campus</a></h4>
+                                <div class="mh-eduyear">2017-2018</div>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur ut dolore at labore perferendis 
+                                    ex blanditiis ducimus laborum assumenda modi. Esse nulla cumque ipsum sunt autem corrupti iusto
+                                    illum facilis.
+                                </p>
+                            </div>
+
+                            <div class="mh-education-item">
+                                <h4>Bachelore of Information Technology from <a href="http://www.bit.lk/">University of Colombo School of Computing</a></h4>
+                                <div class="mh-eduyear">2017-2020</div>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur ut dolore at labore perferendis 
+                                    ex blanditiis ducimus laborum assumenda modi. Esse nulla cumque ipsum sunt autem corrupti iusto
+                                    illum facilis.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-smd-12 col-md-6">
+                    <div class="mh-work">
+                        <h3>Work Experience</h3>
+                        <div class="mh-experience-details">
+
+                            <div class="mh-work-item">
+                                <h4>iOS Developer <a href="https://www.elegantmedia.com.au/">Elegant Media Sri lanka</a></h4>
+                                <div class="mh-eduyear">2020-2021</div>
+                                <span>Responsibility</span>
+                                <ul class="work-responsibility">
+                                    <li><i class="fa fa-circle"></i> Validate css</li>
+                                    <li><i class="fa fa-circle"></i> Validate css</li>
+                                </ul>
+                            </div>
+
+                            <div class="mh-work-item">
+                                <h4>UI/UX Designer <a href="">Ironssketch</a></h4>
+                                <div class="mh-eduyear">2005-2006</div>
+                                <span>Responsibility</span>
+                                <ul class="work-responsibility">
+                                    <li><i class="fa fa-circle"></i> Validate css</li>
+                                    <li><i class="fa fa-circle"></i> Validate css</li>
+                                </ul>
+                            </div>
+
+                            <div class="mh-work-item">
+                                <h4>UI/UX Designer <a href="">Ironssketch</a></h4>
+                                <div class="mh-eduyear">2005-2006</div>
+                                <span>Responsibility</span>
+                                <ul class="work-responsibility">
+                                    <li><i class="fa fa-circle"></i> Validate css</li>
+                                    <li><i class="fa fa-circle"></i> Validate css</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>                
+
+            </div>
+        </div>
+    </section>
+
+    <!--------- Portfolio markup --------->
+
+    <br><br><br><br>
+
+    <section class="mh-portfolio" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title col-sm-12">
+                    <h3>Recent Portfolio</h3>
+                </div>
+                <br><br><br><br>
+                <div class="part col-sm-12">
+                    <div class="portfolio-nav col-sm-12" id="filter-button">
+                        <ul>
+                            <li data-filter="*" class="current">
+                                <span>All Categories</span>
+                            </li>
+                            <li data-filter=".user-interface" class="current">
+                                <span>Web Design</span>
+                            </li>
+                            <li data-filter=".branding" class="current">
+                                <span>Branding</span>
+                            </li>
+                            <li data-filter=".mockup" class="current">
+                                <span>Mockup</span>
+                            </li>
+                            <li data-filter=".ui" class="current">
+                                <span>Photography</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mh-project-gallery col-sm-12" id="project-gallery">
+                        <div class="portfolioContainer row">
+
+                            <div class="grid-item col-md-4 user-interface">
+                                <figure>
+                                    <img src="images/g1.jpg" alt="">
+                                    <figcaption class="fig-caption">
+                                        <i class="fa fa-search"></i>
+                                        <h5 class="title">Creative Design</h5>
+                                        <span class="sub-title">Photography</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 ui mockup">
+                                <figure>
+                                    <img src="images/g2.png" alt="">
+                                    <figcaption class="fig-caption">
+                                        <i class="fa fa-search"></i>
+                                        <h5 class="title">Creative Design</h5>
+                                        <span class="sub-title">Photography</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 branding">
+                                <figure>
+                                    <img src="images/g3.png" alt="">
+                                    <figcaption class="fig-caption">
+                                        <i class="fa fa-search"></i>
+                                        <h5 class="title">Creative Design</h5>
+                                        <span class="sub-title">Photography</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 branding">
+                                <figure>
+                                    <img src="images/g4.png" alt="">
+                                    <figcaption class="fig-caption">
+                                        <i class="fa fa-search"></i>
+                                        <h5 class="title">Creative Design</h5>
+                                        <span class="sub-title">Photography</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 branding">
+                                <figure>
+                                    <img src="images/g5.png" alt="">
+                                    <figcaption class="fig-caption">
+                                        <i class="fa fa-search"></i>
+                                        <h5 class="title">Creative Design</h5>
+                                        <span class="sub-title">Photography</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 branding">
+                                <figure>
+                                    <img src="images/g7.jpg" alt="">
+                                    <figcaption class="fig-caption">
+                                        <i class="fa fa-search"></i>
+                                        <h5 class="title">Creative Design</h5>
+                                        <span class="sub-title">Photography</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 ui">
+                                <figure>
+                                    <img src="images/g8.png" alt="">
+                                    <figcaption class="fig-caption">
+                                        <i class="fa fa-search"></i>
+                                        <h5 class="title">Creative Design</h5>
+                                        <span class="sub-title">Photography</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 ui">
+                                <figure>
+                                    <img src="images/g9.png" alt="">
+                                    <figcaption class="fig-caption">
+                                        <i class="fa fa-search"></i>
+                                        <h5 class="title">Creative Design</h5>
+                                        <span class="sub-title">Photography</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="circle-progress.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".sidemenu-toggler").click(function() {
+                $(".sidemenu").addClass("active");
+            });
+
+            $(".close").click(function() {
+                $(".sidemenu").removeClass("active")
+            });
+        });
+
+        $(window).scroll(function() {
+            var sc = $(window).scrollTop();
+            if (sc > 150) {
+                $(".header").addClass("sticky");
+            }else{
+                $(".header").removeClass("sticky");
+            }
+        });
+
+        $(window).on("load", function() {
+            var $container = $('.portfolioContainer');
+            $container.isotope({
+                filter: '*',
+                animationOptions: {
+                    queue: true
+                }
+            });
+
+            $('.portfolio-nav li').click(function() {
+            $('.portfolio-nav .current').removeClass('current');
+            $(this).addClass('current');
+            var selector = $(this).attr('data-filter');
+                $container.isotope({
+                    filter: selector,
+                    animationOptions: {
+                        queue: true
+                    }
+                });
+                return false;
+            });
+
+            $('#portfolio-item').mixItUp();
+
+        });
+
+        $(function() {
+            $("a.smooth-scroll").click(function(e) {
+                e.preventDefault();
+                var section = $(this).attr("href");
+                $('html, body').animate({
+                    scrollTop: $(section).offset().top - 144
+                }, 1000, "easeInOutExpo")
+            });
+
+            // $(window).on("load", function(){
+            //     $('#preloader').delay(2050).fadeOut('slow');
+            //     $('body').delay(3850).css({'overflow': 'visible'});
+            // });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            //Preloader
+            preloaderFadeOutTime = 2000;
+            function hidePreloader() {
+                var preloader = $('#preloader');
+                preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+           // $('body').delay(3850).css({'overflow': 'visible'});
+        });
+    </script>
+</body>
 </html>

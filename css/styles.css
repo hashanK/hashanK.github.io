@@ -21,6 +21,37 @@
     background-size: 40%;
 }
 
+/* Social Icons */
+#social_side_links {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 99;
+}
+
+#social_side_links li a {display: block;}
+
+#social_side_links li a img {
+    display: block;
+    max-width:40px;
+    padding: 10px;
+    -webkit-transition:  background .2s ease-in-out;
+    -moz-transition:  background .2s ease-in-out;
+    -o-transition:  background .2s ease-in-out;
+    transition:  background .2s ease-in-out;
+}
+
+#social_side_links li a:hover img {
+    background: rgba(0, 0, 0, .2);
+}
+
+/* #social_side_links li a img:hover{
+    padding-left: 20px;
+    width:165px;
+} */
+
 html{
     box-sizing: border-box;
     font-size: 16px;
@@ -264,6 +295,10 @@ ul{
 
     .header .sidemenu nav a{
         font-size: 1.2rem;
+    }
+
+    #me_img{
+        display: none;
     }
 }
 

@@ -26,8 +26,18 @@
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <div class="elfsight-app-1f3a428a-9a3c-439f-9bca-c264a44aa1f5"></div>
 
+    <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-1b2a75b9-5c9c-439e-8e42-9fad8036d2a5"></div> -->
+
 </head>
 <body>
+
+    <!-- Social Icons left bar -->
+    <ul id="social_side_links">
+        <li><a style="background-color: #3c5a96;" href="https://facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="" /></a></li>
+        <li><a style="background-color: #1dadeb;" href="https://twitter.com/hashan_mk" target="_blank"><img src="images/twitter-icon.png" alt="" /></a></li>
+        <li><a style="background-color: #1178b3;" href="https://www.linkedin.com/in/hashan-kannangara-8113b0162/" target="_blank"><img src="images/linkedin-icon.png" alt="" /></a></li>
+    </ul>
 
     <!--------- Preload markup starts ------->
     <div id="preloader">
@@ -74,10 +84,10 @@
                 </nav>
                 <footer>
                     <div class="social">
-                        <a href=""><img src="images/facebook.png" alt="facebook"></a>
-                        <a href="https://twitter.com/hashan_mk"><img src="images/twitter.png" alt="twitter"></a>
-                        <a href=""><img src="images/instagram.png" alt="instagram"></a>
-                        <a href="https://www.linkedin.com/in/hashan-kannangara-8113b0162/"><img src="images/linkedin.png" alt="linkedin"></a>
+                        <a href="" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                        <a href="https://twitter.com/hashan_mk" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
+                        <a href="" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/in/hashan-kannangara-8113b0162/" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
                     </div>
                     <p>2020-2021 creation of Hashan</p>
                 </footer>
@@ -114,7 +124,7 @@
             <div class="col-md-6">
                 <div class="hero-img">
                     <div class="img-border">
-                        <img src="images/me.png" class="img-fluid" alt="">
+                        <img src="images/me.png" id="me_img" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -675,6 +685,7 @@
             hidePreloader();
            // $('body').delay(3850).css({'overflow': 'visible'});
            //$("[target=_blank]").css("display", "");
+            $("a.eapps-link").css("display", "");
         });
 
         

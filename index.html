@@ -2,32 +2,217 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Hashan | Portfolio </title>
+ 
+   <!-------Google Font linking-------->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ 
+   <!-------Google Font linking-------->
+   
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   
+   <!-- <link rel="stylesheet" href="..//"> -->
+  
+   <!------Animate.css cdn link------>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+   
+    <!------Font awesome cdn link------>
+   
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <!-------Bootstrap cdn linking-------->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   
+   
+   <!-------style.css linking-------->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- <script src="js/jquery.goTop.js"></script> -->
+   <style>
+    
+.mh-footer ::-webkit-input-placeholder {
+  opacity: 0.9;
+}
+.mh-footer :-ms-input-placeholder {
+  opacity: 0.9;
+}
+.mh-footer ::-ms-input-placeholder {
+  opacity: 0.9;
+}
+.mh-footer ::placeholder {
+  opacity: 0.9;
+}
 
-    <!--------- Google font linking ------->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <link href="css/oswald.css" rel="stylesheet">
+.mh-footer .form-control {
+  padding: 20px;
+  -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+}
 
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <link href="css/poppins.css" rel="stylesheet">
+.mh-footer .form-control:focus {
+  -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+  border-color: transparent;
+}
 
-    <!--------- FontAwesome CDN linking ------->
-    <link rel="stylesheet" href="css/font-awesome.min.css" >
+.mh-footer .contact-message {
+  -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 20px;
+  outline: 0;
+}
 
-    <!--------- Bootstrap CDN linking ------->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+.mh-footer .contact-message:focus {
+  -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+  border-color: transparent;
+}
 
-    <!--------- styles.css linking ------->
-    <link rel="stylesheet" href="css/styles.css">
+/*
+    ==============
+       MAP
+    ==============
+*/
+.mh-map {
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.mh-map #mh-map {
+  height: 400px;
+  width: 100%;
+}
+
+/*
+    ============
+    Footer Address
+    ==============
+*/
+.mh-footer-address {
+  margin-bottom: 60px;
+}
+
+.mh-footer-address .mh-address-footer-item {
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.mh-footer-address .mh-address-footer-item h4 {
+  margin-bottom: 20px;
+}
+
+.mh-footer-address .mh-address-footer-item address {
+  margin-bottom: 0;
+}
+
+.mh-footer-address .mh-address-footer-item .each-icon {
+  margin-bottom: 30px;
+}
+
+.mh-footer-address .mh-address-footer-item .each-icon .fa {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  border-radius: 50%;
+  line-height: 100px;
+  font-size: 20px;
+  border-color: #0bceaf;
+}
+
+.form-control {
+  -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16), 0 0px 2px 0 rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16), 0 0px 2px 0 rgba(255, 255, 255, 0.12);
+  background-color: transparent;
+  border-color: transparent;
+  margin-bottom: 20px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16), 0 0px 2px 0 rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16), 0 0px 2px 0 rgba(255, 255, 255, 0.12);
+  background-color: transparent;
+}
+
+.p-200 {
+  padding: 0 200px;
+}
+
+.img-overlay {
+  background-image: url(../images/footer-bg.png);
+  background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center center;
+}
+
+.image-bg {
+  background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center center;
+}
+.map-image {
+  background-image: url(images/map-color-overlay.png);
+}
+
+.shadow-1 {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.social-icon li{
+    display: inline-block;
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.social-icon li a{
+    color: white;
+}
+
+.mh-copyright p{
+    font-family: 'Poppins',sans-serif;
+}
+
+.fa-angle-up{
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    line-height: 42px;
+    text-align: center;
+}
+       
+</style>
 
     <!--------- Whatsapp integration ------->
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <div class="elfsight-app-1f3a428a-9a3c-439f-9bca-c264a44aa1f5"></div>
 
 </head>
-<body>
+<body> 
+   
+    <!--------- Preload markup starts ------->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <!-----how to use animate and wow.min.js-->
 
     <!-- Social Icons left bar -->
     <ul id="social_side_links">
@@ -35,642 +220,923 @@
         <li><a style="background-color: #1dadeb;" href="https://twitter.com/hashan_mk" target="_blank"><img src="images/twitter-icon.png" alt="" /></a></li>
         <li><a style="background-color: #1178b3;" href="https://www.linkedin.com/in/hashan-kannangara-8113b0162/" target="_blank"><img src="images/linkedin-icon.png" alt="" /></a></li>
     </ul>
-
-    <!--------- Preload markup starts ------->
-    <div id="preloader">
-        <div id="status">&nbsp;</div>
-    </div>
-
-
-    <!--------- Navigations starts ------->
-    <main class="main">
-        <header class="header">
-            <div class="wrap d-flex">
-                <h1 class="logo">
-                    <a href=""><img src="images/logo.png"></a>
-                </h1>
-                <nav class="menu">
-                    <ul>
-                        <li><a class="smooth-scroll" href="#home">Home</a></li>
-                        <li><a class="smooth-scroll" href="#about">About</a></li>
-                        <li><a class="smooth-scroll" href="#skills">Skills</a></li>
-                        <li><a class="smooth-scroll" href="#portfolio">portfolio</a></li>
-                        <li><a class="smooth-scroll" href="#services">Services</a></li>
-                        <li><a class="smooth-scroll" href="">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <a href="javascript:void(0)" class="sidemenu-toggler">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-
-            <div class="sidemenu">
-                <a href="javascript:void(0)" class="close"></a>
-                <nav>
-                    <ul>
-                        <li><a class="smooth-scroll" href="#home">Home</a></li>
-                        <li><a class="smooth-scroll" href="#about">About</a></li>
-                        <li><a class="smooth-scroll" href="#skills">Skills</a></li>
-                        <li><a class="smooth-scroll" href="#portfolio">portfolio</a></li>
-                        <li><a class="smooth-scroll" href="#services">Services</a></li>
-                        <li><a class="smooth-scroll" href="">Contact</a></li>
-                    </ul>
-                </nav>
-                <footer>
-                    <div class="social">
-                        <a href="" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
-                        <a href="https://twitter.com/hashan_mk" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
-                        <a href="" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
-                        <a href="https://www.linkedin.com/in/hashan-kannangara-8113b0162/" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
-                    </div>
-                    <p>2020-2021 creation of Hashan</p>
-                </footer>
-            </div>
-
-        </header>
-    </main>
-
-    <!--------- Home markup starts--------->
-
-    <br><br><br><br>
-
-    <section class="home container text-white" id="home">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="hero-text">
-                    <span class="title">Hello i'm</span><br>
-                    <span class="name">Hashan.</span><br>
-                    <!-- <span style="font-size: 15px;">Madushanka Kannangara</span><br> -->
-                    <span class="designation">Mobile Application Developer</span><br>
-                    <span class="email"><i class="fa fa-circle-o"></i> Hashan Madushanka Kannangara.</span><br>
-                    <span class="email"><i class="fa fa-envelope"></i> hashankannangara@gmail.com</span><br>
-                    <span class="phone"><i class="fa fa-phone"></i> +94 716783018</span>
-
-                    <div class="social-icons d-flex">
-                        <li><i class="fa fa-facebook"></i></li>
-                        <li><i class="fa fa-twitter"></i></li>
-                        <li><i class="fa fa-linkedin"></i></li>
-                        <li><i class="fa fa-instagram"></i></li>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="hero-img">
-                    <div class="img-border">
-                        <img src="images/me.png" id="me_img" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!--------- About markup starts--------->
-
-    <br><br><br><br><br>
-
-    <section class="about" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="images/Work in progress.gif" alt="" style="border-radius: 20px;">
-                </div>
-                <div class="col-md-5 text-white gap">
-                    <br><br<br><br>
-                    <h2>About me</h2>
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aspernatur maiores 
-                        enim necessitatibus perspiciatis quas labore culpa nam inventore unde esse ducimus laudantium natus,
-                        illo in at quam eligendi. Fugiat. enim necessitatibus perspiciatis quas labore culpa nam inventore 
-                        unde esse ducimus laudantium natus, illo in at quam eligendi. Fugiat.
-                    </p>
-                    <br>
-
-                    <div class="tag">
-                        <ul>
-                            <li><span>Flutter</span></li>
-                            <li><span>iOS</span></li>
-                            <li><span>Swift</span></li>
-                            <li><span>PHP</span></li>
-                            <li><span>Dart</span></li>
-                            <li><span>UI/UX</span></li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="download-button">
-                        <a href="" class="btn btn-danger">Download CV</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--------- Services markup starts--------->
     
-    <br><br><br><br><br>
-
-    <section class="mh-service text-white" id="services">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h3>What I do</h3>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="mh-service-item">
-                        <i class="fa fa-code purple-color"></i>
-                        <h3>iOS Development</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, cupiditate, 
-                            illum eum voluptates possimus inventore quos quasi dicta modi porro distinctio 
-                            illo commodi qui accusantium facere nulla, impedit tempore nostrum.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="mh-service-item">
-                        <i class="fa fa-code iron-color"></i>
-                        <h3>Web Development</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, cupiditate, 
-                            illum eum voluptates possimus inventore quos quasi dicta modi porro distinctio 
-                            illo commodi qui accusantium facere nulla, impedit tempore nostrum.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="mh-service-item">
-                        <i class="fa fa-code sky-color"></i>
-                        <h3>Flutter Development</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, cupiditate, 
-                            illum eum voluptates possimus inventore quos quasi dicta modi porro distinctio 
-                            illo commodi qui accusantium facere nulla, impedit tempore nostrum.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <br>
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col-sm-4">
-                    <div class="mh-service-item">
-                        <i class="fa fa-code purple-color"></i>
-                        <h3>UI Design</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, cupiditate, 
-                            illum eum voluptates possimus inventore quos quasi dicta modi porro distinctio 
-                            illo commodi qui accusantium facere nulla, impedit tempore nostrum.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="mh-service-item">
-                        <i class="fa fa-code iron-color"></i>
-                        <h3>Business Analysis</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, cupiditate, 
-                            illum eum voluptates possimus inventore quos quasi dicta modi porro distinctio 
-                            illo commodi qui accusantium facere nulla, impedit tempore nostrum.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="mh-service-item">
-                        <i class="fa fa-code sky-color"></i>
-                        <h3>Project Testing</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, cupiditate, 
-                            illum eum voluptates possimus inventore quos quasi dicta modi porro distinctio 
-                            illo commodi qui accusantium facere nulla, impedit tempore nostrum.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-
-    <!--------- Skills & Chart markup starts--------->
-
-    <br><br><br><br>
-
-    <section class="mh-skills" id="skills">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="mh-skills-inner">
-                        <div class="mh-professional-skill">
-                            <h3> Technical Skills</h3>
-                            <div class="each-skills">
-
-                                <div class="candidates">
-                                    <div class="parcial">
-                                        <div class="info">
-                                            <div class="name">Swift</div>
-                                            <div class="percentage-num">86%</div>
-                                        </div>
-                                        <div class="progressBar">
-                                            <div class="percentage" style="width: 86%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="candidates">
-                                    <div class="parcial">
-                                        <div class="info">
-                                            <div class="name">Dart</div>
-                                            <div class="percentage-num">86%</div>
-                                        </div>
-                                        <div class="progressBar">
-                                            <div class="percentage" style="width: 86%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="candidates">
-                                    <div class="parcial">
-                                        <div class="info">
-                                            <div class="name">PHP</div>
-                                            <div class="percentage-num">46%</div>
-                                        </div>
-                                        <div class="progressBar">
-                                            <div class="percentage" style="width: 46%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="candidates">
-                                    <div class="parcial">
-                                        <div class="info">
-                                            <div class="name">HTML/CSS</div>
-                                            <div class="percentage-num">76%</div>
-                                        </div>
-                                        <div class="progressBar">
-                                            <div class="percentage" style="width: 76%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-6">
-                    <div class="mh-professional-skills">
-                        <h3>Professional Skills</h3>
-                        <ul class="mh-professional-progress">
-                            <li>
-                                <div class="mh-progress mh-progress-circle" data-progress="95"></div>
-                                <div class="pr-skill-name">Communication</div>
-                            </li>
-                            <li>
-                                <div class="mh-progress mh-progress-circle" data-progress="55"></div>
-                                <div class="pr-skill-name">Team work</div>
-                            </li>
-                            <li>
-                                <div class="mh-progress mh-progress-circle" data-progress="55"></div>
-                                <div class="pr-skill-name">Project Management</div>
-                            </li>
-                            <li>
-                                <div class="mh-progress mh-progress-circle" data-progress="77"></div>
-                                <div class="pr-skill-name">Creativity</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!--------- Education Timeline--------->
-
-    <br><br><br><br>
-
-    <section class="mh-experience" id="experience">
-        <div class="container">
-            <div class="row">
-                <div class="col-smd-12 col-md-6">
-                    <div class="mh-education">
-                        <h3>Education</h3>
-                        <div class="mh-education-details">
-
-                            <div class="mh-education-item">
-                                <h4>Advanced Level from <a href="https://dssenanayakecollege.lk/">D.S Senanayake Colleage</a></h4>
-                                <div class="mh-eduyear">2012-2014</div>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur ut dolore at labore perferendis 
-                                    ex blanditiis ducimus laborum assumenda modi. Esse nulla cumque ipsum sunt autem corrupti iusto
-                                    illum facilis.
-                                </p>
-                            </div>
-
-                            <div class="mh-education-item">
+    
+    <!-------Navigation starts-------->
+ 
+     <main class="main" id="main">
+         <header class="header">
+             <div class="wrap d-flex">
+                 <h1 class="logo">
+                     <a href=""><img src="images/logo.png" alt=""></a>
+                 </h1>
+                 <nav class="menu">
+                     <ul>
+                         <li><a class="smooth-scroll" href="#home">Home</a></li>
+                         <li><a  href="#about" class="nav-link smooth-scroll">About</a></li>
+                         <li><a  href="#pages" class="smooth-scroll">Pages</a></li>
+                         <li><a  href="#skills" class="smooth-scroll">Skills</a></li>
+                         <li><a  href="#gallery" class="smooth-scroll" >Gallery</a></li>
+                         <li><a  href="#mh-contact" class="smooth-scroll">Contact</a></li>
+                     </ul>
+                 </nav>
+             </div>
+             
+             <a href="javascript:void(0);" class="sidemenu-toggler">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+               
+             </a>
+             
+             <div class="sidemenu">
+                 <a href="javascript:void(0);" class="close"></a>
+                 <nav>
+                     <ul>
+                         <li><a href="">Home</a></li>
+                         <li><a class="smooth-scroll" href="#about">About</a></li>
+                         <li><a href="">Pages</a></li>
+                         <li><a href="">Blog</a></li>
+                         <li><a href="">Gallery</a></li>
+                         <li><a href="">Contact</a></li>
+                     </ul>
+                 </nav>
+                 <footer>
+                     <div class="social">
+                         <a href=""><img src="images/facebook.png" alt=""></a>
+                         <a href=""><img src="images/twitter.png" alt=""></a>
+                         <a href=""><img src="images/instagram.png" alt=""></a>
+                     </div>
+                     <p>2020-2021 Rodi, Made with love by Hifi Tutorials</p>
+                      
+     
+                 </footer>
+             </div>             
+         </header>         
+     </main>
+     
+     
+     <!-------Home markup starts------>
+     <br><br><br><br><br>
+     
+     <section class="home container text-white" id="home">
+         <div class="row">
+             <div class="col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                 <div class="hero-text">
+                     <span class="title">Hello i'm</span><br>
+                     <span class="name">Hashan.</span> <br>
+                     <span class="designation">Mobile Application Developer</span> <br>
+                     <span class="email"><i class="fa fa-circle-o"></i> Hashan Madushanka Kannangara.</span><br>
+                     <span class="email"><i class="fa fa-envelope"></i> 
+                     hashankannangara@gmail.com</span> <br>
+                     <span class="phone"><i class="fa fa-phone"></i> +94 716783018</span>
+                     
+          
+                     
+                     <div class="social-icons d-flex">
+                         <li><i class="fa fa-facebook"></i></li>
+                         <li><i class="fa fa-twitter"></i></li>
+                         <li><i class="fa fa-linkedin"></i></li>
+                         <li><i class="fa fa-instagram"></i></li>
+                     </div>                     
+                 </div>
+                 
+             </div>
+             
+             
+     
+             <div class="col-md-6 wow fadeInUp">
+                 <div class="hero-img">
+                     <div class="img-border">
+                         <img src="images/me.png" class="img-fluid" alt="">
+                     </div>
+                 </div>
+             </div>
+             
+         </div>
+     </section>
+     
+      
+      
+      
+   <!------About markup starts------>
+      
+      <br><br><br><br><br>
+      
+      <section class="about" id="about">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 wow bounceInLeft" data-wow-duration="1.1s" data-wow-delay="1.1s">
+                      <img src="images/Work in progress.gif" style="border-radius: 20px;" alt="">
+                  </div>
+                  <div class="col-md-5 text-white gap wow bounceInLeft" data-wow-duration="1.1s" data-wow-delay="1.1s">
+                      <br><br><br><br>
+                      <h2>About me</h2>
+                      <br>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, quasi, molestias? Velit similique harum ipsa, unde consectetur cupiditate numquam ipsum error qui. Voluptate excepturi esse modi eaque rerum pariatur, doloribus.
+                      </p>
+                      <br>
+                      
+                      <div class="tag">
+                          <ul>
+                              <li><span>Php</span></li>
+                              <li><span>html</span></li>
+                              <li><span>css</span></li>
+                              <li><span>php</span></li>
+                              <li><span>wordpress</span></li>
+                              <li><span>react</span></li>
+                              <li><span>javascript</span></li>
+                          </ul>
+                      </div>
+                      <br>
+                      <div class="download-button">
+                          <a href="" class="btn btn-danger">Download cv</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+     
+      
+            
+   <!-----Service markup starts----->
+      
+      <br><br><br><br><br><br>
+      
+      <section class="mh-service text-white" id="pages">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12 text-center">
+                      <h3>What I do</h3>
+                  </div>
+                  <div class="col-sm-4 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                      <div class="mh-service-item">
+                          <i class="fa fa-bullseye purple-color"></i>
+                          <h3>iOS Development</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fugiat, commodi voluptas ea iusto consequatur voluptatibus quae aliquam atque harum.
+                          </p>
+                      </div>
+                  </div>
+                  
+                  
+                  <div class="col-sm-4 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                      <div class="mh-service-item">
+                          <i class="fa fa-code iron-color"></i>
+                          <h3>Web Development</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fugiat, commodi voluptas ea iusto consequatur voluptatibus quae aliquam atque harum.
+                          </p>
+                      </div>
+                  </div>
+                  
+                  <div class="col-sm-4 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                      <div class="mh-service-item">
+                          <i class="fa fa-object-ungroup sky-color"></i>
+                          <h3>Flutter Development</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fugiat, commodi voluptas ea iusto consequatur voluptatibus quae aliquam atque harum.
+                          </p>
+                      </div>
+                  </div>                  
+              </div>
+          </div>
+          
+          <br>
+          <div class="container">
+              <div class="row">                  
+                  <div class="col-sm-4 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                      <div class="mh-service-item">
+                          <i class="fa fa-bullseye purple-color"></i>
+                          <h3>UI Design</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fugiat, commodi voluptas ea iusto consequatur voluptatibus quae aliquam atque harum.
+                          </p>
+                      </div>
+                  </div>
+                  
+                  
+                  <div class="col-sm-4 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                      <div class="mh-service-item">
+                          <i class="fa fa-code iron-color"></i>
+                          <h3>Web Development</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fugiat, commodi voluptas ea iusto consequatur voluptatibus quae aliquam atque harum.
+                          </p>
+                      </div>
+                  </div>
+                  
+                  <div class="col-sm-4 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                      <div class="mh-service-item">
+                          <i class="fa fa-object-ungroup sky-color"></i>
+                          <h3>App Development</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fugiat, commodi voluptas ea iusto consequatur voluptatibus quae aliquam atque harum.
+                          </p>
+                      </div>
+                  </div>                  
+              </div>
+          </div>         
+          
+          
+      </section>
+      
+      
+         <!-----Skills & Chart markup starts-----> 
+         
+         <br><br><br><br><br><br><br><br>
+         
+         <section class="mh-skills" id="skills">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-sm-12 col-md-6">
+                         <div class="mh-skills-inner">
+                             <div class="mh-professional-skill">
+                                 <h3> Technical Skills</h3>
+                                 <div class="each-skills">
+                                     <div class="candidatos">
+                                         <div class="parcial">
+                                             <div class="info">
+                                                 <div class="nome">Swift</div>
+                                                 <div class="percentage-num">86%</div>
+                                             </div>
+                                             <div class="progressBar">
+                                                 <div class="percentagem" style="width: 86%;"></div>
+                                             </div>
+                                             
+                                         </div>
+                                     </div>
+                                     
+                                      <div class="candidatos">
+                                         <div class="parcial">
+                                             <div class="info">
+                                                 <div class="nome">Dart</div>
+                                                 <div class="percentage-num">46%</div>
+                                             </div>
+                                             <div class="progressBar">
+                                                 <div class="percentagem" style="width: 46%;"></div>
+                                             </div>
+                                             
+                                         </div>
+                                     </div>
+                                     
+                                     
+                                      <div class="candidatos">
+                                         <div class="parcial">
+                                             <div class="info">
+                                                 <div class="nome">PHP</div>
+                                                 <div class="percentage-num">38%</div>
+                                             </div>
+                                             <div class="progressBar">
+                                                 <div class="percentagem" style="width: 38%;"></div>
+                                             </div>
+                                             
+                                         </div>
+                                     </div>
+                                     
+                                     
+                                      <div class="candidatos">
+                                         <div class="parcial">
+                                             <div class="info">
+                                                 <div class="nome">HTML/CSS</div>
+                                                 <div class="percentage-num">17%</div>
+                                             </div>
+                                             <div class="progressBar">
+                                                 <div class="percentagem" style="width: 17%;"></div>
+                                             </div>                                             
+                                         </div>
+                                     </div>                                     
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     
+                     
+                     <div class="col-sm-12 col-md-6">
+                         <div class="mh-professional-skills">
+                             <h3>Professional Skills</h3>
+                             <ul class="mh-professional-progress">
+                                 <li>
+                                     <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                     <div class="pr-skill-name">Communication</div>
+                                 </li>
+                                 
+                                 
+                                  <li>
+                                     <div class="mh-progress mh-progress-circle" data-progress="55"></div>
+                                     <div class="pr-skill-name">Team work</div>
+                                 </li>
+                                 
+                                   <li>
+                                     <div class="mh-progress mh-progress-circle" data-progress="86"></div>
+                                     <div class="pr-skill-name">Project Management</div>
+                                 </li>
+                                 
+                                 
+                                    <li>
+                                     <div class="mh-progress mh-progress-circle" data-progress="60"></div>
+                                     <div class="pr-skill-name">Creativity</div>
+                                 </li>
+                                  
+                             </ul>
+                         </div>
+                     </div>
+                   
+                 </div>                 
+             </div>
+         </section>
+      
+      <!--------Education Timeline--------->
+      <br><br><br><br><br><br><br>
+      
+      <section class="mh-experience" >
+          <div class="container">
+              <div class="row">
+                  <div class="col-smd-12 col-md-6">
+                      <div class="mh-education">
+                          <h3>Education</h3>
+                          <div class="mh-education-details">
+                              <div class="mh-education-item">
+                                  <h4>Advanced Level from <a href="https://dssenanayakecollege.lk/">D.S Senanayake Colleage</a></h4>
+                                  <div class="mh-eduyear">2012-2014</div>
+                                  <p>
+                                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                                  </p>
+                              </div>
+                              
+                              
+                               <div class="mh-education-item">
                                 <h4>Diploma in Software Engineering from <a href="http://esoft.lk/">Esoft Metro Campus</a></h4>
                                 <div class="mh-eduyear">2017-2018</div>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur ut dolore at labore perferendis 
-                                    ex blanditiis ducimus laborum assumenda modi. Esse nulla cumque ipsum sunt autem corrupti iusto
-                                    illum facilis.
-                                </p>
-                            </div>
-
-                            <div class="mh-education-item">
+                                  <p>
+                                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                                  </p>
+                              </div>
+                              
+                              
+                               <div class="mh-education-item">
                                 <h4>Bachelore of Information Technology from <a href="http://www.bit.lk/">University of Colombo School of Computing</a></h4>
                                 <div class="mh-eduyear">2017-2020</div>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur ut dolore at labore perferendis 
-                                    ex blanditiis ducimus laborum assumenda modi. Esse nulla cumque ipsum sunt autem corrupti iusto
-                                    illum facilis.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-smd-12 col-md-6">
-                    <div class="mh-work">
-                        <h3>Work Experience</h3>
-                        <div class="mh-experience-details">
-
-                            <div class="mh-work-item">
+                                  <p>
+                                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                                  </p>
+                              </div>                               
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-sm-12 col-md-6">
+                      <div class="mh-work">
+                          <h3>Work Experience</h3>
+                          <div class="mh-experience-details">
+                              <div class="mh-work-item">
                                 <h4>iOS Developer <a href="https://www.elegantmedia.com.au/">Elegant Media Sri lanka</a></h4>
                                 <div class="mh-eduyear">2020-2021</div>
-                                <span>Responsibility</span>
-                                <ul class="work-responsibility">
-                                    <li><i class="fa fa-circle"></i> Validate css</li>
-                                    <li><i class="fa fa-circle"></i> Validate css</li>
-                                </ul>
-                            </div>
-
-                            <div class="mh-work-item">
-                                <h4>UI/UX Designer <a href="">Ironssketch</a></h4>
-                                <div class="mh-eduyear">2005-2006</div>
-                                <span>Responsibility</span>
-                                <ul class="work-responsibility">
-                                    <li><i class="fa fa-circle"></i> Validate css</li>
-                                    <li><i class="fa fa-circle"></i> Validate css</li>
-                                </ul>
-                            </div>
-
-                            <div class="mh-work-item">
-                                <h4>UI/UX Designer <a href="">Ironssketch</a></h4>
-                                <div class="mh-eduyear">2005-2006</div>
-                                <span>Responsibility</span>
-                                <ul class="work-responsibility">
-                                    <li><i class="fa fa-circle"></i> Validate css</li>
-                                    <li><i class="fa fa-circle"></i> Validate css</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>                
-
-            </div>
-        </div>
-    </section>
-
-    <!--------- Portfolio markup --------->
-
-    <br><br><br><br>
-
-    <section class="mh-portfolio" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="section-title col-sm-12">
-                    <h3>Recent Portfolio</h3>
-                </div>
-                <br><br><br><br>
-                <div class="part col-sm-12">
-                    <div class="portfolio-nav col-sm-12" id="filter-button">
-                        <ul>
-                            <li data-filter="*" class="current">
-                                <span>All Categories</span>
-                            </li>
-                            <li data-filter=".user-interface" class="current">
-                                <span>Web Design</span>
-                            </li>
-                            <li data-filter=".branding" class="current">
-                                <span>Branding</span>
-                            </li>
-                            <li data-filter=".mockup" class="current">
-                                <span>Mockup</span>
-                            </li>
-                            <li data-filter=".ui" class="current">
-                                <span>Photography</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="mh-project-gallery col-sm-12" id="project-gallery">
-                        <div class="portfolioContainer row">
-
+                                  <span>Responsibility</span>
+                                  <ul class="work-responsibility">
+                                      <li><i class="fa fa-circle"></i> Validate css</li>
+                                      <li><i class="fa fa-circle"></i> Project Management</li>
+                                  </ul>
+                              </div>
+                              
+                              
+                              <div class="mh-work-item">
+                                  <h4>UI/UX Designer <a href="">Ironsketch</a></h4>
+                                  <div class="mh-eduyear">2005-2008</div>
+                                  <span>Responsibility</span>
+                                  <ul class="work-responsibility">
+                                      <li><i class="fa fa-tick"></i> Validate css</li>
+                                      <li><i class="fa fa-tick"></i> Project Management</li>
+                                  </ul>
+                              </div>
+                              
+                              
+                              <div class="mh-work-item">
+                                  <h4>UI/UX Designer <a href="">Ironsketch</a></h4>
+                                  <div class="mh-eduyear">2005-2008</div>
+                                  <span>Responsibility</span>
+                                  <ul class="work-responsibility">
+                                      <li><i class="fa fa-tick"></i> Validate css</li>
+                                      <li><i class="fa fa-tick"></i> Project Management</li>
+                                  </ul>
+                              </div>
+                               
+                          </div>
+                      </div>
+                  </div>
+                   
+                  
+              </div>
+          </div>
+      </section>
+      
+      
+      
+        <!-------Portfolio markup-------->
+      
+      
+      <br><br><br><br><br><br><br>
+      
+      
+      <section class="mh-portfolio" id="gallery">
+          <div class="container">
+              <div class="row">
+                  <div class="section-title col-sm-12">
+                      <h3>Recent Portfolio</h3>
+                  </div>
+                  <br><br><br><br><br>
+                  <div class="part col-sm-12">
+                      <div class="portfolio-nav col-sm-12" id="filter-button">
+                          <ul>
+                              <li data-filter="*" class="current">
+                                  <span>All Categories</span>
+                              </li>
+                              
+                              <li data-filter=".user-interface">
+                                  <span>Web Design</span>
+                              </li>
+                              
+                              
+                              <li data-filter=".branding">
+                                  <span>Branding</span>
+                              </li>
+                              
+                               <li data-filter=".mockup">
+                                  <span>Mockups</span>
+                              </li>
+                              
+                               <li data-filter=".ui">
+                                  <span>Photography</span>
+                              </li>
+                          </ul>
+                      </div>
+                      
+                      
+                      <div class="mh-project-gallery col-sm-12" id="project-gallery">
+                          <div class="portfolioContainer row">
+                              <div class="grid-item col-md-4 user-interface">
+                                  <figure>
+                                      <img src="images/g1.jpg" alt="">
+                                      <figcaption class="fig-caption">
+                                          <i class="fa fa-search"></i>
+                                          <h5 class="title">Creative Design</h5>
+                                          <span class="sub-title">Photography</span>
+                                      </figcaption>
+                                  </figure>
+                              </div>  
+                              
+                                                           
+                             <div class="grid-item col-md-4 ui mockup">
+                                  <figure>
+                                      <img src="images/g2.png" alt="">
+                                      <figcaption class="fig-caption">
+                                          <i class="fa fa-search"></i>
+                                          <h5 class="title">Creative Design</h5>
+                                          <span class="sub-title">Photography</span>
+                                      </figcaption>
+                                  </figure>
+                              </div>  
+                              
+                                                           
+                                <div class="grid-item col-md-4 user-interface">
+                                  <figure>
+                                      <img src="images/g3.png" alt="">
+                                      <figcaption class="fig-caption">
+                                          <i class="fa fa-search"></i>
+                                          <h5 class="title">Creative Design</h5>
+                                          <span class="sub-title">Photography</span>
+                                      </figcaption>
+                                  </figure>
+                              </div>  
+                              
+                              <div class="grid-item col-md-4 branding">
+                                  <figure>
+                                      <img src="images/g5.png" alt="">
+                                      <figcaption class="fig-caption">
+                                          <i class="fa fa-search"></i>
+                                          <h5 class="title">Creative Design</h5>
+                                          <span class="sub-title">Photography</span>
+                                      </figcaption>
+                                  </figure>
+                              </div>  
+                              
+                                                           
                             <div class="grid-item col-md-4 user-interface">
-                                <figure>
-                                    <img src="images/g1.jpg" alt="">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="grid-item col-md-4 ui mockup">
-                                <figure>
-                                    <img src="images/g2.png" alt="">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                            </div>
-
+                                  <figure>
+                                      <img src="images/g4.png" alt="">
+                                      <figcaption class="fig-caption">
+                                          <i class="fa fa-search"></i>
+                                          <h5 class="title">Creative Design</h5>
+                                          <span class="sub-title">Photography</span>
+                                      </figcaption>
+                                  </figure>
+                              </div>  
+                              
+                                                           
                             <div class="grid-item col-md-4 branding">
-                                <figure>
-                                    <img src="images/g3.png" alt="">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="grid-item col-md-4 branding">
-                                <figure>
-                                    <img src="images/g4.png" alt="">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="grid-item col-md-4 branding">
-                                <figure>
-                                    <img src="images/g5.png" alt="">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="grid-item col-md-4 branding">
-                                <figure>
-                                    <img src="images/g7.jpg" alt="">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
-                            </div>
-
+                                  <figure>
+                                      <img src="images/g6.png" alt="">
+                                      <figcaption class="fig-caption">
+                                          <i class="fa fa-search"></i>
+                                          <h5 class="title">Creative Design</h5>
+                                          <span class="sub-title">Photography</span>
+                                      </figcaption>
+                                  </figure>
+                              </div>  
+                              
+                                                           
+                                                                        
                             <div class="grid-item col-md-4 ui">
-                                <figure>
-                                    <img src="images/g8.png" alt="">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
+                                  <figure>
+                                      <img src="images/g9.png" alt="">
+                                      <figcaption class="fig-caption">
+                                          <i class="fa fa-search"></i>
+                                          <h5 class="title">Creative Design</h5>
+                                          <span class="sub-title">Photography</span>
+                                      </figcaption>
+                                  </figure>
+                              </div>  
+                              
+                                                           
+                                                                                 
+                            <div class="grid-item col-md-4 branding">
+                                  <figure>
+                                      <img src="images/g7.jpg" alt="">
+                                      <figcaption class="fig-caption">
+                                          <i class="fa fa-search"></i>
+                                          <h5 class="title">Creative Design</h5>
+                                          <span class="sub-title">Photography</span>
+                                      </figcaption>
+                                  </figure>
+                              </div> 
+                                                                                                                                                                                                    
+                          </div>
+                           
+                      </div>
+                 
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+       
+    <!-------Pricing plan markup-------->
+      
+      <!-- <br><br><br><br><br>
+      <section class="pricing">
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm-12 text-white text-left">
+                     <h3>Pricing Table</h3>
+                 </div>
+                 <br><br><br><br><br><br>
+                 <div class="col-md-4">
+                     <div class="pricing dark-bg">
+                         <i class="fa fa-calendar"></i>
+                         <h4>Full-time work</h4>
+                         <p>
+                             i am available for full time
+                         </p>
+                         <h5>$1500</h5>
+                         <ul>
+                             <li>Web Development</li>
+                             <li>Advertising</li>
+                             <li>Game Development</li>
+                             <li>Music writing</li>
+                         </ul>
+                         <a href="" class="btn btn-fill">Hire me</a>
+                     </div>
+                 </div>
+                 
+                 
+                   <div class="col-md-4">
+                     <div class="pricing dark-bg">
+                         <i class="fa fa-file"></i>
+                         <h4>Fixed Price Project</h4>
+                         <p>
+                             i am available for fixed roles
+                         </p>
+                         <h5>$1500</h5>
+                         <ul>
+                             <li>Web Development</li>
+                             <li>Advertising</li>
+                             <li>Game Development</li>
+                             <li>Music writing</li>
+                         </ul>
+                         <a href="" class="btn btn-fill">Hire me</a>
+                     </div>
+                 </div>
+                 
+                 
+                 
+                   <div class="col-md-4">
+                     <div class="pricing dark-bg">
+                         <i class="fa fa-calendar"></i>
+                         <h4>Hourly Work</h4>
+                         <p>
+                             i am available for Hourly Projects
+                         </p>
+                         <h5>$50</h5>
+                         <ul>
+                             <li>Web Development</li>
+                             <li>Advertising</li>
+                             <li>Game Development</li>
+                             <li>Music writing</li>
+                         </ul>
+                         <a href="" class="btn btn-fill">Hire me</a>
+                     </div>
+                 </div>
+                 
+                 
+             </div>
+         </div>
+          
+      </section> -->
+      
+      
+    <!-- <br><br><br>
+     <section class="mh-blog">
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm-12">
+                     <h3>Featured Posts</h3>
+                 </div>
+                 <br><br><br><br>
+                 <div class="col-md-4">
+                     <div class="mh-blog-item dar-bg">
+                         <img src="images/b-3.png" class="img-fluid" alt="">
+                         <div class="blog-inner">
+                             <h2>
+                                 <a href="">Google Starts crawl</a>
+                             </h2>
+                             <br>
+                             <div class="mh-blog-post-info">
+                                 <ul>
+                                     <li>Post on <a href="">25.11.21</a></li>
+                                     <li>By <a href="">Berry Theme</a></li>
+                                 </ul>
+                             </div>
+                             <p>
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad omnis doloremque, esse expedita a recusandae consequuntur deserunt repudiandae iste.
+                             </p>
+                             <a href="">Read more</a>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 
+                   <div class="col-md-4">
+                     <div class="mh-blog-item dar-bg">
+                         <img src="images/b-2.png" class="img-fluid" alt="">
+                         <div class="blog-inner">
+                             <h2>
+                                 <a href="">Google Starts crawl</a>
+                             </h2>
+                             <br>
+                             <div class="mh-blog-post-info">
+                                 <ul>
+                                     <li>Post on <a href="">25.11.21</a></li>
+                                     <li>By <a href="">Berry Theme</a></li>
+                                 </ul>
+                             </div>
+                             <p>
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad omnis doloremque, esse expedita a recusandae consequuntur deserunt repudiandae iste.
+                             </p>
+                             <a href="">Read more</a>
+                         </div>
+                     </div>
+                 </div>
+                 
+                   <div class="col-md-4">
+                     <div class="mh-blog-item dar-bg">
+                         <img src="images/b-1.png" class="img-fluid" alt="">
+                         <div class="blog-inner">
+                             <h2>
+                                 <a href="">Google Starts crawl</a>
+                             </h2>
+                             <br>
+                             <div class="mh-blog-post-info">
+                                 <ul>
+                                     <li>Post on <a href="">25.11.21</a></li>
+                                     <li>By <a href="">Berry Theme</a></li>
+                                 </ul>
+                             </div>
+                             <p>
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad omnis doloremque, esse expedita a recusandae consequuntur deserunt repudiandae iste.
+                             </p>
+                             <a href="">Read more</a>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 
+             </div>
+         </div>
+         
+     </section> -->
+      
+      
+      <br><br><br><br>
+       <footer class="mh-footer" id="mh-contact">
+            <div class="map-image image-bg">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                           <br><br><br>
+                            <h3>Contact Me</h3>
+                        </div>
+                    
+                        <div class="col-sm-12 mh-footer-address">
+                           <br><br><br>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                        <div class="each-icon">
+                                            <i class="fa fa-location-arrow"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Address</h4>
+                                            <address>
+                                                Homagama, Colombo
+                                            </address>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                        <div class="each-icon">
+                                            <i class="fa fa-envelope-o"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Email</h4>
+                                            <a href="mailto:hashankannangara@email.com" class="text-white">hashankannangara@email.com</a><br>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                        <div class="each-icon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Phone</h4>
+                                            <a href="callto:(880)-8976-987" class="text-white">+94716783018</a><br>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="grid-item col-md-4 ui">
-                                <figure>
-                                    <img src="images/g9.png" alt="">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photography</span>
-                                    </figcaption>
-                                </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator">
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <input name="name" class="contact-name form-control" id="name" type="text" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <input name="name" class="contact-email form-control" id="L_name" type="text" placeholder="Last Name" required>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <input name="name" class="contact-subject form-control" id="email" type="email" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <textarea class="contact-message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <!-- Subject Button -->
+                                    <div class="btn-form col-sm-12">
+                                        <button type="submit" class="btn btn-fill btn-block" id="form-submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <div class="mh-map">
+                               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d57573.17431957145!2d85.10254498094079!3d25.594167940428395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1616414273404!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
-
+                        </div>
+                        <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                   <br>
+                                    <div class="text-left text-white text-xs-center">
+                                        <p>All right reserved - Made By Hashan</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                   
+                                    <ul class="social-icon">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-github"></i></a></li>        
+                                        <li><a href="#main" class="smooth-scroll"><i class="fa fa-angle-up"></i></a></li>            
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- <section>
-
-        <form action="https://formspree.io/f/xdowapzv" method="POST">
-            <div class="form-group">
-                <label> Your email:
-                    <div class="col-md-12">
-                        <input type="email" class="form-control" name="_replyto" placeholder="name@example.com">
-                    </div>
-                    
-                </label>
-            </div>
-
-            <div class="form-group">
-                <label> Your message:
-                    <textarea class="form-control" name="message"></textarea>
-                </label>
-            </div>
-
-            <button class="btn btn-info" type="submit">Send</button>
-        </form>
-    </section>   -->
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="circle-progress.js"></script>
+           
+        </footer>     
+      
+      
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/jquery.goTop.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+ 
+    <script src="js/circle-progress.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    
     <script>
-        $(document).ready(function() {
-            $(".sidemenu-toggler").click(function() {
+    
+        $(document).ready(function(){
+            $(".sidemenu-toggler").click(function(){
                 $(".sidemenu").addClass("active");
             });
-
-            $(".close").click(function() {
-                $(".sidemenu").removeClass("active")
+            
+            $(".close").click(function(){
+                $(".sidemenu").removeClass("active");
             });
-        });
-
-        $(window).scroll(function() {
-            var sc = $(window).scrollTop();
-            if (sc > 150) {
-                $(".header").addClass("sticky");
-            }else{
-                $(".header").removeClass("sticky");
-            }
-        });
-
-        $(window).on("load", function() {
-            var $container = $('.portfolioContainer');
-            $container.isotope({
-                filter: '*',
-                animationOptions: {
-                    queue: true
+            
+            
+            $(window).scroll(function(){
+                var sc = $(window).scrollTop();
+                if (sc > 150){
+                    $(".header").addClass("sticky");
+                }else{
+                    $(".header").removeClass("sticky");
                 }
             });
-
-            $('.portfolio-nav li').click(function() {
-            $('.portfolio-nav .current').removeClass('current');
-            $(this).addClass('current');
-            var selector = $(this).attr('data-filter');
+            
+            $(window).on("load", function(){
+                var $container = $('.portfolioContainer');
                 $container.isotope({
-                    filter: selector,
+                    filter: '*',
                     animationOptions: {
                         queue: true
                     }
                 });
-                return false;
+                
+                $('.portfolio-nav li').click(function(){
+                    $('.portfolio-nav .current').removeClass('current');
+                    $(this).addClass('current');
+                    var selector = $(this).attr('data-filter');
+                    $container.isotope({
+                        filter: selector,
+                        animationOptions: {
+                            queue: true
+                        }
+                    });
+                    return false;
+                });          
+                            
             });
-
+            
             $('#portfolio-item').mixItUp();
+        
+        });
+    
+    </script>
 
+    <script>
+        $(document).ready(function(){
+        $(".sidemenu-toggler").click(function(){
+            $(".sidemenu").addClass("active");
+        });
+        $(".close").click(function(){
+            $(".sidemenu").removeClass("active");
         });
 
-        $(function() {
-            $("a.smooth-scroll").click(function(e) {
-                e.preventDefault();
-                var section = $(this).attr("href");
-                $('html, body').animate({
-                    scrollTop: $(section).offset().top - 144
-                }, 1000, "easeInOutExpo")
-            });
-
-            // $(window).on("load", function(){
-            //     $('#preloader').delay(2050).fadeOut('slow');
-            //     $('body').delay(3850).css({'overflow': 'visible'});
-            // });
+        $(window).scroll(function () {
+            var sc = $(window).scrollTop();
+            if (sc > 150) {
+                $(".header").addClass("sticky");
+            } else {
+                $(".header").removeClass("sticky");
+            }
+            }); 
         });
     </script>
+      
+    <script>
+        $(function(){
+            $("a.smooth-scroll").click(function(event){
+                event.preventDefault();
+                var section = $(this).attr("href");
+                $('html, body').animate({
+                    scrollTop: $(section).offset().top - 124
+                }, 1250, "easeInOutExpo");
+            });
+        });
+    </script>
+
     <script>
         $(document).ready(function() {
             //Preloader
@@ -680,12 +1146,12 @@
                 preloader.fadeOut(preloaderFadeOutTime);
             }
             hidePreloader();
-           // $('body').delay(3850).css({'overflow': 'visible'});
-           //$("[target=_blank]").css("display", "");
-            $("a.eapps-link").css("display", "");
         });
-
-        
     </script>
+
+    <script>    
+      new WOW().init(); 
+    </script>
+     
 </body>
-</html>
+</html> 

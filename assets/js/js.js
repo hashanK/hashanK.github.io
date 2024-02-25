@@ -153,7 +153,7 @@ sr.reveal(`.sr06`, { delay: 300, origin: 'top' }),
 
 document.getElementById('downloadButton').addEventListener('click', async () => {
     // Fetch your PDF file from GitHub
-    const response = await fetch('/assets/Hashan.pdf');
+    const response = await fetch('../Hashan.pdf');
     const pdfBlob = await response.blob();
 
     // Create a link element

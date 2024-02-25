@@ -153,14 +153,14 @@ sr.reveal(`.sr06`, { delay: 300, origin: 'top' }),
 
 document.getElementById('downloadButton').addEventListener('click', async () => {
     // Fetch your PDF file from GitHub
-    const response = await fetch('path/to/your_cv.pdf');
+    const response = await fetch('/assets/Hashan.pdf');
     const pdfBlob = await response.blob();
 
     // Create a link element
     const downloadLink = document.createElement('a');
 
     // Set the download attribute and create an object URL pointing to the Blob
-    downloadLink.download = 'your_cv.pdf';
+    downloadLink.download = 'Hashan.pdf';
     downloadLink.href = URL.createObjectURL(pdfBlob);
 
     // Append the link to the document and trigger a click event to start the download
